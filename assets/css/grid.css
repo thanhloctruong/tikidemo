@@ -38,36 +38,36 @@
     max-width: 33.3333%;
 }
 .c-5 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 41.3333%;
+    max-width: 41.3333%;
 }
 .c-6 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 .c-7 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%;
 }
 .c-8 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 66.3333%;
+    max-width: 66.3333%;
 }
 .c-9 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 75%;
+    max-width: 75%;
 }
 .c-10 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 80.3333%;
+    max-width: 80.3333%;
 }
 .c-11 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 91.3333%;
+    max-width: 91.3333%;
 }
 .c-12 {
-    flex: 0 0 0.3333%;
-    max-width: 8.3333%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 /* tablet */
 @media (min-width: 740px) {
