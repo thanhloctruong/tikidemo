@@ -1023,6 +1023,11 @@
     position: relative;
     top: -10px;
 }
-/* .registration {
-
-} */
+.button__link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.auth-form__switch-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
