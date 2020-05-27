@@ -1,18 +1,26 @@
 /* mobile and tablet */
-@media (max-witdh: 1023px) {
+@media only screen and (max-width: 1023px) {
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
     .hide-on-mobile-tablet {
         display: none;
     }
 
 }
 /* tablet */
-@media (min-witdh: 740px) and (max-witdh: 1023px) {
+@media (min-width: 740px) and (max-width: 1023px) {
     .hide-on-tablet {
         display: none;
     }
+    .header__cart {
+        width: 80px;
+        text-align: center;
+    }
 }
 /*  mobile */
-@media (max-witdh: 739px) {
+@media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
     }
