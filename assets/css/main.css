@@ -1031,3 +1031,8 @@
     text-decoration: none;
     color: var(--primary-color);
 }
+.product__container {
+    background-color: #6666;
+    width: 100%;
+    height: 1000px;
+}
