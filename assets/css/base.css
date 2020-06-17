@@ -71,9 +71,9 @@ html {
     }
 }
 /* modal */
-.modal {
+#modal {
     position: fixed;
-    /* display: flex; */
+    
     display: none;
     right: 0;
     left: 0;

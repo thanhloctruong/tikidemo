@@ -56,9 +56,10 @@ function imageZoom(imgID, resultID) {
 }
 
 // popup modal 
-document.getElementById("buttonlogin").addEventListener("click",function() {
-    document.querySelector(".modal").style.display = "flex" ;
-  });
-document.getElementById('.close').addEventListener('click',function(){
-  document.querySelector('.modal').style.display = 'none' ;
-});
+// document.getElementById("buttonlogin").addEventListener("click",function() {
+//     document.querySelector("#modal").style.display = "flex";
+//     console.log('lasgfd')
+//   });
+// document.getElementById('.close').addEventListener('click',function(){
+//   document.querySelector('.modal').style.display = 'none' ;
+// });

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script src="./main.js"></script>
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.12.1/css/all.min.css">
+    <script src="./main.js"></script>
 </head>
 <body>
     <div class="app">
@@ -118,14 +118,14 @@
                         </li>
                         <li class="header__navbar-icon header__navbar-item">
                             <a href="#" class="header__navbar-item-link">Trợ Giúp
-                                <i class="header__navbar-icon fas fa-question-circle"></i>
+                                   <i class="header__navbar-icon fas fa-question-circle"></i>
                             </a>
                         </li>
                         <li class="header__navbar-item header__navbar-item-link-strong header__navbar-item--separate">
                             <a href="./registration.html" class="header__navbar-links">Đăng Kí</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item-link-strong header__navbar-login">
-                            <a href="./modal.html" class="header__navbar-links">Login</a>
+                            <a href="" id="buttonlogin" class="header__navbar-links">Login</a>
                         </li> 
                         <!-- <li class=" header__navbar-item header__navbar-user">
                             <img src="./assets/img/AC.png" alt="" class="header__navbar-user-img">
@@ -146,6 +146,30 @@
                     </ul>
                 </nav>
                 <div class="header-with-search">
+                    <div class="caterogy__mobile">
+                        <label for="mobile-category-checkbox" class=" mobile__category">
+                            <i class="fas fa-list header__mobile-search-icon hide-on-tablet-pc"></i>
+                        </label>
+                        <!-- <input type="checkbox" id="mobile-category-checkbox" hidden class="mobile__category-checkbox">
+                         -->
+                         <nav class="category_mobile">
+                                <ul class="category-list">
+                                        <li class="category-item category-item--active">
+                                            <a href="#" class="category-item__link">Điện Thoại</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Laptop</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Phụ Kiện</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                    </div>
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="fas fa-search header__mobile-search-icon"></i>
+                    </label>
+
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65">
@@ -155,9 +179,10 @@
                             </svg>
                         </a>
                     </div>
+                    <input type="checkbox" id="mobile-search-checkbox" hidden class="mobile__search-checkbox">
                     <div class="header__search">
                         <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="type to search">
+                            <input type="text" class="header__search-input" placeholder="Type to search">
                             <div class="header__search-history">
                                 <h3 class="header__search-history-heading">lich su tim kiem</h3>
                                 <ul class="header__search-history-list">
@@ -269,58 +294,228 @@
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Liên quan
+                    </a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Mới Nhất
+                    </a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Bán chạy
+                    </a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">
+                        Giá
+                    </a>
+                </li>
+            </ul>
         </header>
-    </div>
-    <div class="product__container">
-        <div class="grid wide">
-            <div class="grid__row product__cover">
-                <header class="product__price">
-                    Vin Smart ưuegfuqfgwa
-                </header>
-                <hr>
-                <div class="grid__column-10">
-                    <div class="product__item">
-                        <div class="grid__column-5">
-                            <div class="img-zoom-container">
-                                    <img id="myimage"  class="img-zoom" src="https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg" width="400" height="340">
-                                    <div id="myresult" class="img-zoom-result"></div>
-                        </div>
-                        </div>
-                        <div class="grid__column-5 product__info" style="background-color: aqua;">
-                            <div class="product__menu">
-                                <ul class="product__list">
-                                    <li class="product-info-item">
-                                        <span>Vin Smart</span>
-    
-                                    </li>
-                                    <li class="product-info-item">
-    
-                                    </li>
-                                    <li class="product-info-item">
-    
-                                    </li>
-                                    <li class="product-info-item">
-    
-                                    </li>
-                                    <li class="product-info-item">
-    
-                                    </li>
-                                </ul>
-                            </div>
-                            </div>
-                    </div>
 
+        <div class="product__container">
+            <div class="grid wide">
+                <div class="row sm-gutter product__cover">
+                    <header class="product__price">
+                        Vin Smart
+                    </header>
+                    <hr>
+                    <div class="col l-10 c-12 m-12">
+                        <div class="product__item">
+                            <div class="grid__column-5">
+                                <div class="img-zoom-container">
+                                        <img id="myimage"  class="img-zoom" src="https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg" width="400" height="340">
+                                        <div id="myresult" class="img-zoom-result"></div>
+                            </div>
+                            </div>
+                            <div class="grid__column-5 product__info" >
+                                <div class="product__menu">
+                                    <ul class="product__list">
+                                        <li class="product-info-item-price">
+                                            <span class="product-item-price"> 
+                                                <p class="product-price">Giá thường <br><b>10.000.000đ</b></p>
+                                            </span>
+                                            
+                                        </li>
+                                        <li class="product-info-item">
+                                            <span class="notify__promotion">
+                                                <h3> Khuyến mãi đặc biệt(SL có hạn)</h3>
+                                            </span>
+                                                <ul class="notify__promotion-list">
+                                                    <p id="notify__pro"><b>Giá đặc biệt đến 30/6: 9.999.999đ</b></p>
+                                                    <li class="notify__promotion-item">Tặng phiếu mua hàng 500K Airpords</li>
+                                                    <li class="notify__promotion-item">Giảm đến 40% bộ sạc nhanh thương hiệu Umetravel khi mua kèm máy</li>
+                                                    <li class="notify__promotion-item">Tặng suất mua Đồng hồ thời trang giảm đến 40%</li>
+                                                    <li class="notify__promotion-item">Giảm thêm 200,000đ khi thanh toán 100% giá trị đơn hàng qua VNPay-QR</li>
+                                                </ul>
+                                        </li>
+                                        <li class="product-info-item-button">
+                                            <div>
+                                                <button class="product-button-buy" >Mua ngay <br>Giao hàng trong 1 giờ hoặc nhận tại shop </button>
+                                             </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                </div>
+                        </div>
+    
+                        </div>
+                    <div class="col l-2">
+                    <ul class="product__include">
+                        <p><b>Trong hộp có:</b></p>
+                        <li class="product__incluce-item">Sạc, cáp, tai nghe, ốp lưng, sách hướng dẫn, que sim, bộ ngòi bút</li>
+                    </ul>
+                    <div class="product__commitment">
+                        <p><b>Shopee cam kết:</b></p>
+                        <li class="product__commitment-item">Hàng chính hãng</li>
+                        <li class="product__commitment-item">Bảo hành 12 tháng</li>
+                        <li class="product__commitment-item">Giao hàng miễn phí toàn quốc trong 60 phút</li>
+                        <li class="product__commitment-item">Bảo hành nhanh tại Shoppe trên toàn cầu</li>
                     </div>
-                <div class="grid__column-2">
-                    iddhbciasbzcix
+                    </div>
                 </div>
             </div>
+    
         </div>
+        <script>
+                // Initiate zoom effect:
+                imageZoom("myimage", "myresult");
+        </script>
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Trung Tâm trọ giúp</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Trang chủ shop</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Giới Thiệu </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Giới Thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Nhà Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Thư điện tử</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Phone</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Laptop</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Phụ kiện</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Liên kết</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">FaceBook</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">instagram</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Gmail</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Tải ứng dụng Shopee</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/qrcode.png" alt="download qr code" class="footer__download-qr">
+                        </div>
+                            
+                    </div>
+                </div>
 
+            </div>
+        </div>
     </div>
-    <script>
-            // Initiate zoom effect:
-            imageZoom("myimage", "myresult");
-    </script>
+    <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="authen-form">
+                <div class="close">+</div>
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Kí</h3>
+                            <span class="auth-form__switch-btn">
+                                <a href="./modal.html" class="auth-form__switch-link">Login</a> </span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="email cua ban">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="mat khau cua ban">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="nhap lai mat khau">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                bằng việc đăng kí bạn đã đồng ý với mọi diều khoản của shop
+                                <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a>
+                                <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">
+                                <a href="./index.html" class="button__link"> Trở lại</a>
+                            </button>
+                            <button class="btn btn--primary">
+                               <a href="./registration.html" class="button__link"> Đăng Kí</a></button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-facebook btn btn--size-s btn__with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-lable">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials-google btn btn--size-s btn__with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-lable">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
 </body>
 </html>

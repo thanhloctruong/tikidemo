@@ -125,7 +125,8 @@
                             <a href="./registration.html" class="header__navbar-links">Đăng Kí</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item-link-strong header__navbar-login">
-                            <a href="" id="buttonlogin" class="header__navbar-links">Login</a>
+    <!-- document.querySelector("#modal").style.display = "flex"; -->
+                            <a href="" id="buttonlogin" class="header__navbar-links" onclick="document.querySelector('#modal').style.display = 'flex'">Login</a>
                         </li> 
                         <!-- <li class=" header__navbar-item header__navbar-user">
                             <img src="./assets/img/AC.png" alt="" class="header__navbar-user-img">
@@ -146,6 +147,26 @@
                     </ul>
                 </nav>
                 <div class="header-with-search">
+                    <div class="caterogy__mobile">
+                        <label for="mobile-category-checkbox" class=" mobile__category">
+                            <i class="fas fa-list header__mobile-search-icon hide-on-tablet-pc"></i>
+                        </label>
+                        <!-- <input type="checkbox" id="mobile-category-checkbox" hidden class="mobile__category-checkbox">
+                         -->
+                         <nav class="category_mobile">
+                                <ul class="category-list">
+                                        <li class="category-item category-item--active">
+                                            <a href="#" class="category-item__link">Điện Thoại</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Laptop</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Phụ Kiện</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                    </div>
                     <label for="mobile-search-checkbox" class="header__mobile-search">
                         <i class="fas fa-search header__mobile-search-icon"></i>
                     </label>
@@ -795,7 +816,7 @@
             </div>
         </div>
     </div>
-    <div class="modal">
+    <div id="modal">
         <div class="modal__overlay">
         </div>
         <div class="modal__body">

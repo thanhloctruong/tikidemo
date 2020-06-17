@@ -7,6 +7,9 @@
     .hide-on-mobile-tablet {
         display: none;
     }
+    .caterogy__mobile {
+        display: block;
+    }
     .header {
         position: fixed;
         z-index: 5;
