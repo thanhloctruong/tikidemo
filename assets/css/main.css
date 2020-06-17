@@ -1,3 +1,6 @@
+.app {
+    overflow: hidden;
+}
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, rgb(71, 118, 206), rgb(28, 67, 175));
@@ -24,14 +27,13 @@
 .header__navbar-user-item--separate {
     border-top: 1px solid rgba(0, 0, 0, 0.5);
 }
-.
 .header__navbar-user {
     display: flex;
     justify-items: center;
     position: relative;
 }
 .header__navbar-user-name {
-    margin-left: 4p§x;
+    margin-left: 4px;
     font-size: 1.4rem; 
     font-weight: 400;
 }
@@ -216,7 +218,7 @@
     width: 400px;
     margin-top: 10px;
     right: 0;
-    border-radius: 2pxß;
+    border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
     cursor: default;
@@ -798,6 +800,7 @@
 /* container */
 .app__container {
     background-color: #ebe6e6;
+    padding-bottom: 20px;
 }
 .app__content {
     padding-top: 24px;
@@ -851,6 +854,14 @@
 .category-item__link:hover {
     right: -4px;
     color: var(--primary-color);
+}
+.close{
+    font-size: 42px;
+    position: absolute;
+    top: 0;
+    right: 14px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
 /* home filter */
 .home-filter {
@@ -1007,10 +1018,6 @@
     font-weight: 300;
     
 }
-
-.home-product-item__brand {
-
-}
 .home-product-item__favorite {
     position: absolute;
     top: 10px;
@@ -1040,9 +1047,6 @@
     border-top: 3px solid currentColor ;
     border-left: 3px solid transparent;
     filter: brightness(60%);
-}
-.home-product-item__origin-name {
-
 }
 .home-product-item__sale-off {
     position: absolute;
@@ -1114,6 +1118,32 @@
     height: 850px;
     background-color: #d6d5d5;
 }
+/* footer */
+.footer {
+    border-top: 4px solid var(--primary-color);
+    padding-top: 12px;
+    padding: 0 10px;
+}
+.footer__header{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+.footer__list {
+    list-style: none;
+    padding-left: 0;
+}
+.footer__links {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #777777;
+    padding: 2px 0;
+    display: block;
+}
+.footer__links:hover {
+    color: var(--primary-color);
+}
+/* zoom product */
 .img-zoom-lens {
     position: absolute;
     /*set the size of the lens:*/

@@ -54,3 +54,11 @@ function imageZoom(imgID, resultID) {
     return {x : x, y : y};
   }
 }
+
+// popup modal 
+document.getElementById("buttonlogin").addEventListener("click",function() {
+    document.querySelector(".modal").style.display = "flex" ;
+  });
+document.getElementById('.close').addEventListener('click',function(){
+  document.querySelector('.modal').style.display = 'none' ;
+});

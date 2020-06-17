@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.12.1/css/all.min.css">
-    
-
+    <script src="./main.js"></script>
 </head>
 <body>
     <div class="app">
@@ -126,7 +125,7 @@
                             <a href="./registration.html" class="header__navbar-links">Đăng Kí</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item-link-strong header__navbar-login">
-                            <a href="./modal.html" class="header__navbar-links">Login</a>
+                            <a href="" id="buttonlogin" class="header__navbar-links">Login</a>
                         </li> 
                         <!-- <li class=" header__navbar-item header__navbar-user">
                             <img src="./assets/img/AC.png" alt="" class="header__navbar-user-img">
@@ -160,9 +159,10 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search hide-on-mobile">
+                    <input type="checkbox" id="mobile-search-checkbox" hidden class="mobile__search-checkbox">
+                    <div class="header__search">
                         <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="type to search">
+                            <input type="text" class="header__search-input" placeholder="Type to search">
                             <div class="header__search-history">
                                 <h3 class="header__search-history-heading">lich su tim kiem</h3>
                                 <ul class="header__search-history-list">
@@ -300,8 +300,8 @@
 
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading category__heading-icon">
                                 <i class="fas fa-list"></i>
@@ -319,7 +319,7 @@
                                 </ul>
                             </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter-label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn">Phổ biến</button>
@@ -353,8 +353,8 @@
                         </div>
                         <div class="home-product">
                             <!-- grid row column -->
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg);"></div>
                                         <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -390,7 +390,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/11/637195383730560800_ss-m31-den-1.png);"></div>
                                         <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -426,7 +426,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cdn.fptshop.com.vn/Uploads/Originals/2019/10/7/637060441292208256_xiaomi-redmi-note-8-pro-den-1.png);"></div>
                                         <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -462,7 +462,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://cdn.fptshop.com.vn/Uploads/Originals/2017/10/30/636449716719020413_1.jpg);"></div>
                                             <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -498,7 +498,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/11/637195222887251208_huawei-7i-hong-1.png);"></div>
                                         <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -534,7 +534,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cdn.fptshop.com.vn/Uploads/Originals/2019/9/12/637039045830366593_realme-5-pro-blue-1.png);"></div>
                                         <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -570,7 +570,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg);"></div>
                                         <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -606,7 +606,7 @@
                                         </div>
                                         </a>
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg);"></div>
                                             <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -642,7 +642,7 @@
                                             </div>
                                        </a>
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg);"></div>
                                             <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -678,7 +678,7 @@
                                             </div>
                                        </a>
                                     </div>
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://genk.mediacdn.vn/thumb_w/640/2019/photo1575277702995-1575277703078-crop-1575277744878598491265.jpg);"></div>
                                             <h4 class="home-product-item__name">Samsung Galaxy M21 Samsung Galaxy M21</h4>
@@ -721,33 +721,134 @@
             </div>
         </div>
         <div class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__header">hello world</h3>
-                        <a href="" class="footer__links">text gmail</a>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Trung Tâm trọ giúp</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Trang chủ shop</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                       
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__header">hello world</h3>
-                        <a href="" class="footer__links">text gmail</a>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Giới Thiệu </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Giới Thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Nhà Tuyển Dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Thư điện tử</a>
+                            </li>
+                        </ul>
+                       
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__header">hello world</h3>
-                        <a href="" class="footer__links">text gmail</a>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">danh mục</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Phone</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Laptop</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Phụ kiện</a>
+                            </li>
+                        </ul>
+                       
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__header">hello world</h3>
-                        <a href="" class="footer__links">text gmail</a>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Liên kết</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">FaceBook</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">instagram</a>
+                            </li>
+                            <li class="footer__item">
+                                 <a href="" class="footer__links">Gmail</a>
+                            </li>
+                        </ul>
+                       
                     </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__header">hello world</h3>
-                        <a href="" class="footer__links">text gmail</a>
+                    <div class="col l-2-4 m-4 c-6">
+                        <h3 class="footer__header">Tải ứng dụng Shopee</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/qrcode.png" alt="download qr code" class="footer__download-qr">
+                        </div>
+                            
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-
+    <div class="modal">
+        <div class="modal__overlay">
+        </div>
+        <div class="modal__body">
+            <div class="authen-form">
+                <div class="close">+</div>
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Kí</h3>
+                            <span class="auth-form__switch-btn">
+                                <a href="./modal.html" class="auth-form__switch-link">Login</a> </span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="email cua ban">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="mat khau cua ban">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="nhap lai mat khau">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                bằng việc đăng kí bạn đã đồng ý với mọi diều khoản của shop
+                                <a href="#" class="auth-form__text-link">Điều khoản dịch vụ</a>
+                                <a href="#" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">
+                                <a href="./index.html" class="button__link"> Trở lại</a>
+                            </button>
+                            <button class="btn btn--primary">
+                               <a href="./registration.html" class="button__link"> Đăng Kí</a></button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-facebook btn btn--size-s btn__with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-lable">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials-google btn btn--size-s btn__with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-lable">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
 </body>
 </html>
