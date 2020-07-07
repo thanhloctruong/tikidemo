@@ -1123,6 +1123,7 @@
     border-top: 4px solid var(--primary-color);
     padding-top: 12px;
     padding: 0 10px;
+    clear: both;
 }
 .footer__header{
     font-size: 1.4rem;
@@ -1246,3 +1247,5 @@
 .product-price:hover{
     background-color: tomato;
 }
+
+/* test */

@@ -10,6 +10,9 @@
     .caterogy__mobile {
         display: block;
     }
+    .col {
+        display: block;
+    }
     .header {
         position: fixed;
         z-index: 5;
@@ -46,6 +49,10 @@
     .header__cart-list {
         padding: 0 calc((100% -644px)/2);
 
+    }
+    div#div-product {
+        display: block;
+        width: unset;
     }
 }
 /*  mobile */

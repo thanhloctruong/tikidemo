@@ -5,7 +5,7 @@
 }
 
 .grid.wide {
-    max-width: 1020px;
+    /* max-width: 1020px; */
     margin: 0 auto;
     align-items: center;
 }

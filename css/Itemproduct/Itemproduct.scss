@@ -1,0 +1,132 @@
+div#product {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    div.item-product {
+        width: calc(25% - 0px);
+        // width: 300px;
+        // height: 300px;
+        height: 22vw;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 1px solid none; 
+        
+
+        img {
+            margin: 0.8vw 0;    
+            width: 10vw;
+        }
+
+        p {
+            margin: 0;
+            padding-bottom: 0.5vw;
+            font-size: 1.2vw;
+            font-weight: 600;
+
+            &:first-child {
+                color: #ff452b;
+            }
+
+            &:nth-child(odd) {
+                color: #ff452b;
+            }
+        }
+        
+        
+
+        button {
+            outline: none;
+            font-weight: 600;
+            border-radius: 50vw;
+            width: 12vw;
+            height: 6vh;
+            border: none;
+            background-color: coral;
+            font-size: 1.2vw;
+            display: none;
+            position: absolute;
+            left: 6.5vw;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+        }
+
+        &:hover {
+            transition: 0.7s;
+            box-shadow: 0 0 10px 1px gray;
+
+            img{
+                transition: 0.7s;
+                transform: scale(1.1);
+            }
+            
+            button{
+                display: block;
+                animation: anim-button-hover 0.7s;
+            }
+        } 
+    }
+}
+
+
+@keyframes anim-button-hover {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 739px) {
+    div#product {
+        div.item-product {
+    
+            img {
+                
+            }
+    
+            p {
+                font-size: 5.3px;
+            }
+            
+            
+    
+            button {
+                width: 50px;
+                height: 10px;
+                display: block;
+            }
+            
+            &:hover {
+                box-shadow: none;
+    
+                img{
+                    transform: scale(1);
+                }
+                
+                button{
+                    display: block;
+                    animation: none 0.7s;
+                }
+            } 
+        }
+    }
+}
+
+// Tablet 
+@media only screen and (min-width: 740px) and (max-width: 1023px) { 
+
+} 
+
+// PC resolution and PC
+@media only screen and (min-width: 1024px) {    
+}
